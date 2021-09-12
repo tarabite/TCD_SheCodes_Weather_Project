@@ -1,19 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Hello Git</h1>
-    <form>
-        <input type="email" placeholder="Enter your name" />
-        <input type="password" placeholder="Enter your password" />
-        <input type="submit" value="Login" />
-    </form>
-    <script src="script.js"></script>
-</body>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="top-title">
+      <h1>
+        <strong>The Weather</strong>
+      </h1>
+    </div>
+
+    <div class="weather-search">
+      <form id="city-search">
+        <input type="text" placeholder="Location Search" id="location-input" />
+        <input type="submit" value="Go" id="location-go" />
+        <button id="current-button">Current</button>
+      </form>
+    </div>
+
+    <div class="temp-results">
+      <h3>Today's Date</h3>
+      <div class="row">
+        <div class="col" id="float-left">
+          <h2>
+            Current
+            <br />
+            Tempurature
+          </h2>
+          <p>
+            <span class="temperature" id="big-emjoi">☀️</span>
+            <span class="temperature" id="big-temp">90</span>
+          </p>
+          <p>
+            <span class="units">
+              <a href="#" id="fahrenheit-link">℉</a> |
+              <a href="#" id="celsius-link">℃</a>
+            </span>
+          </p>
+        </div>
+        <div class="col" id="float-right">
+          <h2>
+            <span id="city-result">Los Angeles </span>
+          </h2>
+          <div class="other-weather">
+            <div class="row">
+              <div class="col">
+                <p>
+                  Wind: <span id="windspeed">7</span> km/h
+                  <br />
+                  Humidity: <span id="humidity">68</span>%
+                  <br />
+                  <span id="description">Description</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="temp-range">
+            <p>
+              H:<span class="high-temp">98</span>℉ | L:<span class="low-temp"
+                >64</span
+              >℉
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-nowrap">
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="card">
+            <h3 class="card-title">Mon</h3>
+            <p class="emoji">
+              ☀️
+              <br />
+              98℉
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h3 class="card-title">Tue</h3>
+            <p class="emoji">
+              ☀️
+              <br />
+              70℉
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h3 class="card-title">Wed</h3>
+            <p class="emoji">
+              🌤
+              <br />
+              60℉
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h3 class="card-title">Thu</h3>
+            <p class="emoji">
+              🌧
+              <br />
+              50℉
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h3 class="card-title">Fri</h3>
+            <p class="emoji">
+              ❄️
+              <br />
+              30℉
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h3 class="card-title">Sat</h3>
+            <p class="emoji">
+              🌤
+              <br />
+              50℉
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <h3 class="card-title">Sun</h3>
+            <p class="emoji">
+              ☀️
+              <br />
+              70℉
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>Created by Tara Diego</footer>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>

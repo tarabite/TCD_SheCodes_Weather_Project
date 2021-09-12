@@ -1,0 +1,118 @@
+.top-title {
+  color: #01937c;
+  font-size: 50px;
+  font-family: Verdana;
+  margin: 0 auto;
+  background-color: #faf1e6;
+  text-align: center;
+  border-color: none;
+  border-radius: 10px;
+  max-width: 400px;
+  padding: 20px 30px;
+  display: block;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+}
+.weather-search {
+  font-family: Verdana;
+  margin: 20px 0;
+  text-align: center;
+  background-color: #ffc074;
+  padding: 20px 30px;
+}
+button {
+  background: #faf1e6;
+  border-radius: 10px;
+  border: solid 2px;
+  border-color: #ffc074;
+  margin: 0 7px;
+  padding: 2px 7px;
+  font-family: Verdana;
+}
+.temp-results {
+  display: block;
+  font-family: Tahoma;
+  margin: 20px auto 20px;
+  text-align: center;
+  background-color: #faf1e6;
+  border-color: none;
+  border-radius: 10px;
+  max-width: 600px;
+  padding: 20px 30px;
+  display: block;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+}
+h2 {
+  color: #01937c;
+  font-family: Tahoma;
+  font-size: 30px;
+  padding: 0 auto 20px;
+}
+
+h3 {
+  color: #01937c;
+  font-family: Tahoma;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 auto 20px;
+}
+.temperature {
+  color: black;
+  font-size: 70px;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 0;
+}
+a:hover {
+  text-decoration: underline;
+}
+.temp-range {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0;
+}
+.other-weather {
+  font-size: 20px;
+  padding: 50px 0 0;
+  text-align: center;
+}
+.row .card {
+  background-color: #faf1e6;
+  text-align: center;
+  border-color: none;
+  border-radius: 10px;
+  max-width: 100px;
+  padding: 20px 10px 0;
+  display: inline-block;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+}
+.card {
+  border: none;
+  margin-bottom: 20px;
+}
+.card h3 {
+  color: #01937c;
+  font-family: Tahoma;
+  font-size: 20px;
+  text-align: center;
+}
+.emoji {
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer {
+  font-family: Tahoma;
+  font-size: 15px;
+  background-color: #ffc074;
+  padding: 20px 30px;
+}
+body {
+  background-image: url("images/paper.jpg");
+  background-size: cover;
+}
